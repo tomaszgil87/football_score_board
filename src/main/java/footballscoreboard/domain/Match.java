@@ -3,5 +3,5 @@ package footballscoreboard.domain;
 import footballscoreboard.shared.ValueObject;
 
 @ValueObject
-public record Match(Score homeTeamScore, Score awayTeamScore) {
+public record Match(MatchId id, Score homeTeamScore, Score awayTeamScore) {
 }
