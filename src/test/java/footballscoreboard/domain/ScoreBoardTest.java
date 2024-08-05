@@ -1,5 +1,7 @@
 package footballscoreboard.domain;
 
+import footballscoreboard.infrastructure.ScoreBoardRepository;
+import footballscoreboard.infrastructure.ScoreBoardRepositoryImpl;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
@@ -9,8 +11,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ScoreBoardTest {
 
-
-    private final ScoreBoard scoreBoard = new ScoreBoardImpl();
+    private final ScoreBoardRepository scoreBoardRepository = new ScoreBoardRepositoryImpl();
+    private final ScoreBoard scoreBoard = new ScoreBoardImpl(scoreBoardRepository);
 
     @Test
     void shouldStartGame() {
