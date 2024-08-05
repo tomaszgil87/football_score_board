@@ -73,7 +73,7 @@ class ScoreBoardTest {
         var matchId2 = scoreBoard.startGame(homeTeam2, awayTeam2);
         scoreBoard.updateScore(matchId1, new Score(homeTeam1, 1), new Score(awayTeam1, 0));
         var matchId3 = scoreBoard.startGame(homeTeam3, awayTeam3);
-        scoreBoard.updateScore(matchId2, new Score(homeTeam1, 0), new Score(awayTeam1, 1));
+        scoreBoard.updateScore(matchId2, new Score(homeTeam2, 0), new Score(awayTeam2, 1));
         //when
         var summary = scoreBoard.summary();
         //then

@@ -3,7 +3,6 @@ package footballscoreboard.infrastructure;
 import footballscoreboard.domain.Match;
 import footballscoreboard.domain.MatchId;
 import footballscoreboard.domain.Score;
-import footballscoreboard.domain.Team;
 
 import java.util.List;
 import java.util.Optional;

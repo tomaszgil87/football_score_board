@@ -15,6 +15,10 @@ public record Score(Team team, int score) {
         this(team, 0);
     }
 
+    public String getTeamName() {
+        return team.name();
+    }
+
     private void validate(int score) {
         if(score < 0) throw new IllegalArgumentException("Score cannot be less than zero");
     }
